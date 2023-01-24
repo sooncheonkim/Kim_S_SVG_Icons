@@ -26,6 +26,16 @@
           fill :rgb(42, 1, 146);
           transform: rotate(150deg);
       }
+
+      <script>
+      let greenbrownbadge = document.querySelector("#greenbrownbadge");
+
+      function logID() {
+          console.log('User clicked on this graphic:', this. id);
+      } 
+
+      greenbrownbadge.addEventListener('click', logID);
+      </script>
     </style>
   </defs>
   <path id="ribonside" class="cls-4" d="m106.94,148.95H0l22.28-36.17L0,76.6h106.94v72.35Zm208.73,0h53.47s53.47,0,53.47,0l-22.28-36.17,22.28-36.17h-53.47s-53.47,0-53.47,0v36.17s0,36.17,0,36.17Z"/>

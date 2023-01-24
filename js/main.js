@@ -7,7 +7,10 @@ document refers to the index.html page; querySelcetor is HOW JS uses CSS to sele
 
 // step 1 - select the elements you want the user to interact with
 let greenbrownbadge = document.querySelector("#greenbrownbadge");
-
+let redbrownbadge = document.querySelector("#redbrownbadge");
+let purplebadge = document.querySelector("#purplebadge");
+let lightpurplebadge = document.querySelector("#lightpurplebadge");
+let bluegreenbadge = document.querySelector("#bluegreenbadge");
 
 
 // step 3 - what happens when events are triggered?
@@ -17,4 +20,7 @@ function logID() {
 
 // step 2 - how do you want the user to interact with the element? 
 greenbrownbadge.addEventListener('click', logID);
-
+redbrownbadge.addEventListener('click', logID);
+purplebadge.addEventListener('click', logID);
+lightpurplebadge.addEventListener('click', logID);
+bluegreenbadge.addEventListener('click', logID);
