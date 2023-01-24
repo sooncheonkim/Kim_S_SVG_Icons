@@ -27,6 +27,16 @@
           transform: rotate(150deg);
       }
 
+    <script>
+      let redbrownbadge = document.querySelector("#redbrownbadge");
+
+      function logID() {
+          console.log('User clicked on this graphic:', this. id);
+      } 
+
+      redbrownbadge.addEventListener('click', logID);
+    </script>
+    
     </style>
   </defs>
   <path id="ribonleft" class="cls-3" d="m106.94,148.95H0l22.28-36.17L0,76.6h106.94v72.35Z"/>
