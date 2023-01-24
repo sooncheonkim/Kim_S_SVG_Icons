@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+.hidden { display: none;}
+
 body {
     font-size: 16px;
     background-color: white;
@@ -15,36 +17,113 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
-    color: rgb(205, 14, 14);
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
-.hidden { display: none;}
+.box-color {
+    background-color: brown;
+    color: white;
+}
 
-.icons { text-align: center;}
+.grid {
+    display: grid;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-columns: repeat(12, 70px);
+    grid-column-gap: 30px;
+}
+
+/* Header */
+
+#main-header {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+#header-logo {
+    font-family: Unbounded;
+    font-size: 35px;
+    width: 270px;
+    height: 40px;
+}
+
+#header-nav {
+    height: 20px;
+    width: 620px;
+    grid-column: 6/-1;
+    margin-top: 15px;
+}
+
+#header-nav ul a {
+    color: white;
+}
+
+#header-nav ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+#header-nav li:last-child {
+    padding-right: 0;
+}
+
+#header-nav ul li a:hover {
+    color: rgb(236, 240, 11);
+}
+
+/* main */
+
+.icons { 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.iconBox {
+    display:list-item
+}
 
 .icons h2 {
+    color: rgb(205, 14, 14);
     font-size: 2em; 
-    margin: 10px 0 30px 0 ;
+    margin: 20px 0 10px 0 ;
+}
+
+.icons p {
+    color: green;
+    font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .icons div {
-    width: 30%;
+    width: 40%;
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 45px;
 }
 
 .icons div img { width: 100%; }
 
+/* Badge 1 */
 #greenbrownbadge { cursor: pointer; }
 #maintext { cursor: pointer; }
-
 #greenbrownbadge:hover #background { fill:rgb(205, 106, 7) }
 #text:hover { fill:rgb(29, 162, 6) }
-
 #dotcircle { transition: all 0.5s ease ; transform-origin: 50%; }
-
 #greenbrownbadge:hover #dotcircle {
     fill :rgb(42, 1, 146);
+    transform: rotate(150deg);
+}
+
+/* Badge 2 */
+#bluegreenbadge { cursor: pointer; }
+#text { cursor: pointer; }
+#riboncenter { cursor: pointer; }
+#bluegreenbadge:hover #background { fill:rgb(205, 106, 7) }
+#text:hover { fill:rgb(190, 5, 125) }
+#riboncenter:hover { fill:rgb(181, 54, 136) }
+#circle { transition: all 0.5s ease ; transform-origin: 50%; }
+#bluegreenbadge:hover #circle {
+    fill :rgb(192, 30, 132);
     transform: rotate(150deg);
 }
