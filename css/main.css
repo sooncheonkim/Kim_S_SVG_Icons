@@ -1,0 +1,50 @@
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: white;
+
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: rgb(205, 14, 14);
+}
+
+.hidden { display: none;}
+
+.icons { text-align: center;}
+
+.icons h2 {
+    font-size: 2em; 
+    margin: 10px 0 30px 0 ;
+}
+
+.icons div {
+    width: 30%;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.icons div img { width: 100%; }
+
+#greenbrownbadge { cursor: pointer; }
+#maintext { cursor: pointer; }
+
+#greenbrownbadge:hover #background { fill:rgb(205, 106, 7) }
+#text:hover { fill:rgb(29, 162, 6) }
+
+#dotcircle { transition: all 0.5s ease ; transform-origin: 50%; }
+
+#greenbrownbadge:hover #dotcircle {
+    fill :rgb(42, 1, 146);
+    transform: rotate(150deg);
+}
