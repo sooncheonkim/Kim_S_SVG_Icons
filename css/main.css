@@ -23,7 +23,7 @@ body {
 }
 
 .box-color {
-    background-color: brown;
+    background-color: #a52a2a;
     color: white;
 }
 
@@ -38,8 +38,7 @@ body {
 /* Header */
 
 #main-header {
-    margin-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 #header-logo {
@@ -53,11 +52,12 @@ body {
     height: 20px;
     width: 620px;
     grid-column: 6/-1;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #header-nav ul a {
-    color: white;
+    color: #fbfafa;
+    text-decoration-line: none;
 }
 
 #header-nav ul li {
@@ -70,14 +70,14 @@ body {
 }
 
 #header-nav ul li a:hover {
-    color: rgb(236, 240, 11);
+    color: rgb(26, 248, 89);
 }
 
 /* main */
 
 .icons { 
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .iconBox {
@@ -85,15 +85,16 @@ body {
 }
 
 .icons h2 {
-    color: rgb(205, 14, 14);
-    font-size: 2em; 
+    color: rgb(107, 1, 123);
+    font-size: 3em; 
     margin: 20px 0 10px 0 ;
 }
 
 .icons p {
     color: green;
-    font-size: 20px;
-    margin-bottom: 40px;
+    font-family: Solitreo;
+    font-size: 30px;
+    margin-bottom: 70px;
 }
 
 .icons div {
@@ -106,10 +107,11 @@ body {
 
 /* Badge 1 */
 #greenbrownbadge { cursor: pointer; }
-#maintext { cursor: pointer; }
+#greenbrownbade #maintext { cursor: pointer; }
 #greenbrownbadge:hover #background { fill:rgb(205, 106, 7) }
-#text:hover { fill:rgb(29, 162, 6) }
-#dotcircle { transition: all 0.5s ease ; transform-origin: 50%; }
+
+#greenbrownbadge:hover #text { fill:rgb(29, 162, 6) }
+#greenbrownbadge #dotcircle { transition: all 0.5s ease ; transform-origin: 50%; }
 #greenbrownbadge:hover #dotcircle {
     fill :rgb(42, 1, 146);
     transform: rotate(150deg);
@@ -117,10 +119,10 @@ body {
 
 /* Badge 2 */
 #redbrownbadge{ cursor: pointer; }
-#text { cursor: pointer; }
+#redbrownbadge #text { cursor: pointer; }
 #redbrownbadge:hover #background { fill:rgb(30, 205, 7) }
-#text:hover { fill:rgb(190, 5, 125) }
-#circle { transition: all 0.5s ease ; transform-origin: 50%; }
+#redbrownbadge:hover #text { fill:rgb(190, 5, 125) }
+#redbrownbadge #circle { transition: all 0.5s ease ; transform-origin: 50%; }
 #redbrownbadge:hover #circle {
     fill :rgb(192, 30, 132);
     transform: rotate(150deg);
@@ -128,16 +130,16 @@ body {
 
 /* Badge 3 */
 #purplebadge { cursor: pointer; }
-#text { cursor: pointer; }
-#ribonleft { cursor: pointer; }
-#ribonright { cursor: pointer; }
-#stars { cursor: pointer; }
+#purplebadge #text { cursor: pointer; }
+#purplebadge #ribonleft { cursor: pointer; }
+#purplebadge #ribonright { cursor: pointer; }
+#purplebadge #stars { cursor: pointer; }
 #purplebadge:hover #background { fill:rgb(86, 7, 205) }
-#text:hover { fill:rgb(3, 156, 13) }
-#ribonleft:hover { fill:rgb(86, 7, 205) }
-#ribonright:hover { fill:rgb(86, 7, 205) }
-#stars:hover { fill:rgb(237, 92, 8) }
-#circle { transition: all 0.5s ease ; transform-origin: 50%; }
+#purplebadge:hover #text { fill:rgb(3, 156, 13) }
+#purplebadge #ribonleft:hover { fill:rgb(86, 7, 205) }
+#purplebadge #ribonright:hover { fill:rgb(86, 7, 205) }
+#purplebadge:hover #stars { fill:rgb(237, 92, 8) }
+#purplebadge #circle { transition: all 0.5s ease ; transform-origin: 50%; }
 #purplebadge:hover #circle {
     fill :rgb(30, 160, 192);
     transform: rotate(150deg);
@@ -146,15 +148,15 @@ body {
 
 /* Badge 4 */
 #lightpurplebadge { cursor: pointer; }
-#text { cursor: pointer; }
-#ribonleft { cursor: pointer; }
-#ribonright { cursor: pointer; }
-#stars { cursor: pointer; }
+#lightpurplebadge #text { cursor: pointer; }
+#lightpurplebadge #ribonleft { cursor: pointer; }
+#lightpurplebadge #ribonright { cursor: pointer; }
+#lightpurplebadge #stars { cursor: pointer; }
 #lightpurplebadge:hover #background { fill:rgb(191, 11, 29) }
-#text:hover { fill:rgb(7, 194, 251) }
-#ribonleft:hover { fill:rgb(86, 7, 205) }
-#ribonright:hover { fill:rgb(86, 7, 205) }
-#stars:hover { fill:rgb(169, 238, 30) }
+#lightpurplebadge:hover #text { fill:rgb(7, 194, 251) }
+#lightpurplebadge:hover #ribonleft { fill:rgb(86, 7, 205) }
+#lightpurplebadge:hover #ribonright { fill:rgb(86, 7, 205) }
+#lightpurplebadge:hover #stars { fill:rgb(169, 238, 30) }
 #lightpurplebadgee:hover #circle {
     fill :rgb(30, 160, 192);
     transform: rotate(150deg);
@@ -162,19 +164,82 @@ body {
 
 /* Badge 6 */
 #bluegreenbadge { cursor: pointer; }
-#text { cursor: pointer; }
-#ribonleft { cursor: pointer; }
-#ribonright { cursor: pointer; }
-#ribonfront { cursor: pointer; }
-#stars { cursor: pointer; }
+#bluegreenbadge #text { cursor: pointer; }
+#bluegreenbadge #ribonleft { cursor: pointer; }
+#bluegreenbadge #ribonright { cursor: pointer; }
+#bluegreenbadge #ribonfront { cursor: pointer; }
+#bluegreenbadge #stars { cursor: pointer; }
 #bluegreenbadge:hover #background { fill:rgb(224, 26, 155) }
-#text:hover { fill:rgb(225, 24, 71) }
-#ribonleft:hover { fill:rgb(86, 7, 205) }
-#ribonright:hover { fill:rgb(86, 7, 205) }
-#ribonfront:hover { fill:rgb(86, 7, 205) }
-#stars:hover { fill:rgb(237, 92, 8) }
-#circle { transition: all 0.5s ease ; transform-origin: 50%; }
+#bluegreenbadge:hover #text { fill:rgb(225, 24, 71) }
+#bluegreenbadge:hover #ribonleft { fill:rgb(86, 7, 205) }
+#bluegreenbadge:hover #ribonright { fill:rgb(86, 7, 205) }
+#bluegreenbadge:hover #ribonfront { fill:rgb(86, 7, 205) }
+#bluegreenbadge:hover #stars { fill:rgb(237, 92, 8) }
+#bluegreenbadge #circle { transition: all 0.5s ease ; transform-origin: 50%; }
 #bluegreenbadge:hover #circle {
     fill :rgb(30, 160, 192);
     transform: rotate(150deg);
+}
+
+/* Footer */
+
+#footer-header {
+    width: 1200px;
+    height: 280px;
+    background-color: #370ea8;
+    margin-top: 50px;
+}
+
+#footer-logo {
+    font-family: Unbounded;
+    font-size: 35px;
+    width: 270px;
+    height: 40px;
+    grid-row: 1/1;
+    margin-top: 40px;
+}
+
+#footer-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 400px;
+    height: 90px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#footer-info p {
+    margin-bottom: 10px;
+    color: white;
+}
+#footer-nav {
+    height: 20px;
+    width: 620px;
+    grid-column: 6/-1;
+    margin-top: 50px;
+}
+
+#footer-nav ul a {
+    color: #fbfafa;
+    text-decoration-line: none;
+}
+
+#footer-nav ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+#footer-nav li:last-child {
+    padding-right: 0;
+}
+
+#footer-nav ul li a:hover {
+    color: rgb(26, 248, 89);
+}
+
+#copyright {
+    color: white;
+    grid-column: 10/-1;
+    grid-row: 2/3;
+    margin-top: 60px;
 }
