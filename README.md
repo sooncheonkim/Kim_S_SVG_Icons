@@ -8,12 +8,7 @@
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-TODO: Write history
-
-## Credits
-
-MIT
 
 ## License
 
-TODO: Write license
+MIT
